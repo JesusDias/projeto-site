@@ -1,0 +1,400 @@
+
+/* =========== estilo body =============*/
+
+.body {
+    margin-top: 3rem;
+}
+
+/* =========== estilo menu =============*/
+
+.navbar {
+    padding: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+/* =========== estilo carousel superior =============*/
+.carousel-item {
+    margin-top: 2rem;
+}
+
+/* navbar */
+
+.navbar-brand {
+    background-color: #63c6ae;
+    min-width: 10rem;
+    padding: 25px;
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Link navbar */
+.nav-link {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dotted rgba(255, 255, 255, .2);
+    text-transform: uppercase;
+    font-size: .9rem;
+    transition: all .5s ease;
+    color: #586165;
+    font-weight: bold;
+}
+
+/* estilo pra UL */
+.navbar-nav {
+    text-align: center;
+    background-color: #242a2c;
+}
+
+/* config pra dimenssões maiores que 992px */
+
+@media screen and (min-width: 992px) {
+    .navbar-nav{
+        background-color: transparent;
+    }
+}
+
+/* ========= Estilização do carousel ==============*/
+
+.carousel-caption .h5 {
+    background-color: #63c6ae;
+    color: white;
+    font-size: 1.75rem;
+    padding: 15px;
+    margin-top: 240px;
+}
+
+.carousel-caption .carousel-text{
+    background-color: #242a2c;
+    margin: 5px 30px 35px;
+    color: white;
+    padding: 15px;
+    font-size: .9rem;
+}
+
+.carousel-caption .btn {
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* ========= Estilização do cards ==============*/
+.card {
+    border: none;
+}
+
+.card-body {
+    border-left: 1px solid rgba(0, 0, 0, .15);
+}
+
+.section-cards{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+/* ========= Estilização das colunas  ==============*/
+
+.section-content {
+    background-color: #f8f9f9;
+}
+
+.section-content .btn-link {
+    text-decoration: none;
+    color: #007bff;
+    transition: all .7s;
+}
+
+.section-content .btn-link:hover {
+    font-weight: bold;
+}
+
+/* ========= Estilização das thumbs  ==============*/
+
+.articles-container {
+    background-color: #63c6ae;
+    padding: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.articles-container .h3 {
+    margin-bottom: 0;
+}
+
+.articles-thumbs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+}
+.articles-thumbs img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 991px){
+    .articles-thumbs{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+
+
+/* ========= Estilização do carousel Note  ==============*/
+.section-notbooks {
+    background-color: #242a2c;
+    padding: 125px 0 100px;
+    width: 100%;
+}
+
+.section-notbooks .carousel-item {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 991px) {
+    .section-notbooks .carousel-item {
+        padding: 5rem;
+    }
+}
+
+/* ============ Estilização aria que eu não sei o nome   ==============*/
+.section-quote {
+    background-color: #63c6ae;
+    padding: 50px 0;
+    border-bottom: 12px solid #48b9a1;
+    color: white;
+    text-align: center;
+}
+
+
+/* ============ Estilização footer  ==============*/
+.footer {
+    background-color: #242a2c;
+    padding: 50px 0 80px;
+    color: #454e51;
+}
+
+.footer-links{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li a {
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    display: block;
+    text-align: center;
+    margin: 8px 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+.footer-links li a .fa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(42px - 12px);
+    font-size: 15px;
+    color: #262626;
+    transition: .5s;
+}
+
+.footer-links li:nth-child(1) a:hover .fa
+{
+    color: #3b3998;
+}
+
+.footer-links li:nth-child(2) a:hover .fa
+{
+    color: #00aced;
+}
+
+.footer-links li:nth-child(3) a:hover .fa
+{
+    color: #dd4b39;
+}
+
+.footer-links li:nth-child(4) a:hover .fa
+{
+    color: #007bb6;
+}
+
+.footer-links li:nth-child(5) a:hover .fa
+{
+    color: #bc2a8d;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+.galeria20
+{
+    box-sizing: border-box;
+    position: relative;
+    background-color: #ccc;
+    height: 650px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container-fotos 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    transition: 0.4s;
+}
+
+.container-fotos .box
+{
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background: #ccc;
+    transition: 0.5s;
+}
+.container-fotos .box:hover
+{
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+}
+
+.container-fotos .box .thumb
+{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.container-fotos .box:nth-child(odd) .thumb
+{
+    bottom: 0;
+    left: 0;
+}
+
+.container-fotos .box .thumb img 
+{
+    width: 100%;
+}
+
+.container-fotos .box .details
+{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #262626;
+}
+
+.container-fotos .box:nth-child(even) .details
+{
+    bottom: 0;
+    left: 0;
+}
+
+.container-fotos .box:nth-child(1) .details
+{
+   background: #8553cb;
+}
+
+.container-fotos .box:nth-child(2) .details
+{
+   background: #f48f01;
+}
+
+.container-fotos .box:nth-child(3) .details
+{
+   background: #79d400;
+}
+
+.container-fotos .box:nth-child(4) .details
+{
+   background: #ff3b34;
+}
+
+.container-fotos .box .details .content
+{
+    position: absolute;
+    top: calc(50% - 16px);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container-fotos .box:hover .details .content
+{
+    top: calc(50%);
+}
+
+.container-fotos .box .details .content .fa 
+{
+    font-size: 80px;
+    color: #fff;
+}
+
+.container-fotos .box .details .content h3 
+{
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.container-fotos .box .details .content a 
+{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+    transform: scale(0);
+}
+
+.container-fotos .box:hover .details .content a
+{
+    transform: scale(1);
+}
+
+
+.container-fotos .box .details .content a:hover
+{
+    background: #fff;
+    color: #262626;
+}
